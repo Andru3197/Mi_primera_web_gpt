@@ -34,6 +34,22 @@ ul {
     padding: 0;
 }
 
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em; /* Agrega espacio entre las listas */
+}
+
+img {
+    width: 90%; /* Hace que las imágenes tengan un ancho del 100% del contenedor */
+    max-width: 400px; /* Establece el tamaño máximo */
+    height: 70%; /* Mantiene la proporción de la imagen */
+    margin: 1em 0; /* Agrega márgenes superior e inferior */
+    margin-top: 0.5em;
+}
+
 button {
     display: inline-block;
     padding: 10px 20px;
@@ -58,8 +74,15 @@ footer {
 }
 
 /* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     section {
         padding: 1em;
     }
+
+    img {
+        width: 80%; /* Hace que las imágenes tengan un ancho del 100% del contenedor */
+        max-width: 300px; /* Establece el tamaño máximo */
+        height: 60%; /* Mantiene la proporción de la imagen */
+        margin: 1em 0; /* Agrega márgenes superior e inferior */
+}
 }
